@@ -1,4 +1,4 @@
 # project-debt-application
 
 training project:
-html, css, javascript, react, node.js, heroku.
+html, css, javascript, react, node, heroku.
