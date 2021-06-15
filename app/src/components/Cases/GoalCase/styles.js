@@ -23,7 +23,8 @@ export const GoalIcon = styled.div`
 `;
 
 export const WrapperProgress = styled.div`
-  width: 60%;
+  margin-left: 1rem;
+  flex: 1;
 `;
 
 export const Title = styled.h3`
@@ -31,10 +32,16 @@ export const Title = styled.h3`
   color: #707070;
   font-weight: 700;
   text-align: left;
+  margin-bottom: 0.3rem;
+`;
+
+export const ProgressBarBox = styled.div`
+  width: 90%;
 `;
 
 export const ProgressBar = styled.div`
-  width: 100%;
+  width: ${(props) => props.percent}%;
+  max-width: 100%;
   border: 1px solid #53a9ff;
   border-radius: 6px;
   background: transparent linear-gradient(90deg, #53a9ff 0%, #328de8 100%) 0% 0%
@@ -42,3 +49,18 @@ export const ProgressBar = styled.div`
   height: 11px;
 `;
 export const WrapperValue = styled.div``;
+
+export const Currency = styled.h3`
+  color: #53a9ff;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0.3rem;
+`;
+
+export const Value = styled.h3`
+  color: #53a9ff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+`;

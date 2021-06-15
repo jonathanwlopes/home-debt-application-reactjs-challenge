@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20%;
+  height: 170px;
   background-image: linear-gradient(114deg, #53a9ff, #328de8);
 `;
 

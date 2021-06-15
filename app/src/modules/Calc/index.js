@@ -1,9 +1,6 @@
-import dbDebtApplication from "../../mocks";
+export const CalcAmount = (wallets) => {
 
-export const CalcAmount = (userId) => {
-  const user = dbDebtApplication.getUserById(userId);
-
-  const totalValue = user.wallet.reduce((acc, wallet) => {
+  const totalValue = wallets.reduce((acc, wallet) => {
     acc += wallet.amount;
     return acc;
   }, 0);
@@ -12,4 +9,3 @@ export const CalcAmount = (userId) => {
     minimumFractionDigits: 2,
   });
 };
-

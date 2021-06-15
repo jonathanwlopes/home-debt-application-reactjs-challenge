@@ -6,6 +6,8 @@ export const Container = styled.div`
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  background: #53a9ff38 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
 `;
 
 export const WalletIcon = styled.div`
@@ -27,7 +29,7 @@ export const WrapperInfo = styled.div`
   flex: 1;
 `;
 
-export const Bank = styled.h3`
+export const Title = styled.h3`
   font-size: 16px;
   font-weight: 900;
   color: #707070;
@@ -39,21 +41,4 @@ export const Category = styled.h3`
   font-size: 14px;
   color: #707070;
   text-align: left;
-`;
-
-export const WrapperValue = styled.div``;
-
-export const Currency = styled.h3`
-  color: #53a9ff;
-  font-size: 14px;
-  font-weight: 900;
-  text-align: center;
-  margin-bottom: 0.3rem;
-`;
-
-export const Value = styled.h3`
-  color: #53a9ff;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
 `;

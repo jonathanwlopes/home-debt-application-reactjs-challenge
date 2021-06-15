@@ -33,17 +33,51 @@ const dbDebtApplication = {
       },
       wallet: [
         {
-          _id: 1,
+          _id: 100,
           bank: "Banco Inter",
           type: "Conta Corrente",
           amount: 1000,
         },
 
         {
-          _id: 2,
+          _id: 200,
           bank: "Nubank",
           type: "Poupança",
           amount: 20000,
+        },
+        {
+          _id: 201,
+          bank: "Nubank",
+          type: "Poupança",
+          amount: 20000,
+        },
+        {
+          _id: 202,
+          bank: "Nubank",
+          type: "Poupança",
+          amount: 20000,
+        },
+        {
+          _id: 203,
+          bank: "Nubank",
+          type: "Poupança",
+          amount: 20000,
+        },
+      ],
+      goals: [
+        {
+          _id: 1000,
+          name: "Curso tecnologia",
+          date: new Date(),
+          value: 20000,
+          amount: 1000,
+        },
+        {
+          _id: 1001,
+          name: "Material de construção",
+          date: new Date(),
+          value: 20000,
+          amount: 19000,
         },
       ],
     },
@@ -58,6 +92,21 @@ const dbDebtApplication = {
     const user = userList.find((user) => user._id === userId);
 
     return user;
+  },
+
+  addGoals: () => {
+    const newGoal = {
+      _id: generateId(),
+      name: "Material de construção",
+      date: new Date(),
+      value: 20000,
+      amount: 19000,
+    };
+    
+    const newGoals = [...dbDebtApplication.users[1].goals, newGoal];
+
+    dbDebtApplication.users[1].goals = newGoals;
+
   },
 };
 
